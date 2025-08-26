@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bihać Hip Hop Timeline (1970s–1990s)</title>
+  <meta name="description" content="A concise history of the Bihać Hip Hop scene from the late 1970s through the 1990s—crews, DJs, venues, radio shows, films, and key events." />
+  <meta property="og:title" content="Bihać Hip Hop Timeline" />
+  <meta property="og:description" content="A concise history of the Bihać Hip Hop scene from the late 1970s through the 1990s." />
+  <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root {
+      --bg: #0e0f12;
+      --panel: #14161b;
+      --muted: #9aa3af;
+      --text: #e7eaf0;
+      --brand: #22d3ee;
+      --orange: #fb923c;
+      --blue: #60a5fa;
+      --green: #34d399;
+      --purple: #a78bfa;
+      --red: #f87171;
+      --yellow: #fde047;
+      --border: #23262d;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg); color: var(--text);
+      line-height: 1.6; letter-spacing: 0.1px;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: linear-gradient(180deg, rgba(14,15,18,0.95), rgba(14,15,18,0.7));
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; padding: 12px 24px; }
+    .logo {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: conic-gradient(from 210deg, var(--orange), var(--yellow), var(--green), var(--blue), var(--purple), var(--red), var(--orange));
+      box-shadow: 0 0 0 2px #0003 inset;
+    }
+    nav { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding: 0 24px 16px; }
+    nav a { color: var(--muted); font-weight: 600; }
+    nav a:hover { color: var(--text); }
+
+    .hero { background: radial-gradient(1200px 500px at 20% -10%, #1f2937 0, transparent 50%),
+                           radial-gradient(1000px 400px at 80% -40%, #0b7285 0, transparent 50%);
+             border-bottom: 1px solid var(--border); }
+    .hero .wrap { padding-top: 48px; padding-bottom: 40px; }
+    .kicker { color: var(--brand); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px; }
+    h1 { margin: 6px 0 10px; font-size: clamp(28px, 5vw, 48px); line-height: 1.1; }
+    .lede { color: var(--muted); max-width: 75ch; }
+
+    /* Chips / Filters */
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top: 14px; }
+    .chip { border:1px solid var(--border); background: var(--panel); color: var(--muted); padding: 6px 10px; border-radius: 999px; font-size: 13px; cursor:pointer; user-select:none; }
+    .chip[data-active="true"]{ color:#111; background: var(--brand); border-color: transparent; }
+
+    /* Grid */
+    .grid { display:grid; grid-template-columns: 260px 1fr; gap: 24px; align-items:start; }
+    @media (max-width: 880px){ .grid { grid-template-columns: 1fr; } }
+
+    aside { position: sticky; top: 88px; border:1px solid var(--border); border-radius: 14px; background: var(--panel); padding: 16px; }
+    aside h3 { margin-top:0; }
+    .toc { list-style:none; padding:0; margin:0; }
+    .toc li { margin: 6px 0; }
+
+    /* Cards */
+    section { scroll-margin-top: 100px; }
+    .card { border:1px solid var(--border); background: var(--panel); border-radius: 14px; padding: 18px; margin-bottom: 16px; position: relative; }
+    .tag { position: absolute; top: -10px; right: 12px; font-size: 12px; padding: 3px 8px; border-radius: 6px; font-weight: 700; color:#111; }
+    .t-found { background: var(--orange); }
+    .t-radio { background: var(--green); }
+    .t-venue { background: var(--purple); }
+    .t-event { background: var(--yellow); }
+    .t-cinema { background: var(--red); }
+    .t-crew { background: var(--blue); }
+    .t-figure { background: #f59e0b; }
+
+    h2 { margin: 26px 0 12px; font-size: clamp(22px, 3.6vw, 28px); }
+    h3 { margin: 14px 0 6px; font-size: 18px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 0 18px; }
+
+    footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 28px 0; color: var(--muted); }
+
+    /* Print */
+    @media print {
+      header, aside, .chips { display:none !important; }
+      body { background: #fff; color: #000; }
+      .card { page-break-inside: avoid; border-color: #ccc; }
+      a { color: #000; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <div class="kicker">Bihać · Hip Hop History</div>
+        <div style="font-weight:800; font-size: 18px;">Bihać Hip Hop Timeline (1970s–1990s)</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#intro">Intro</a>
+      <a href="#foundations">Foundations</a>
+      <a href="#golden">Golden Age</a>
+      <a href="#figures">Key Figures</a>
+      <a href="#crews">Crews</a>
+      <a href="#venues">Venues</a>
+      <a href="#events">Events</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="intro">
+    <div class="wrap">
+      <h1>The Bihać Hip Hop Scene</h1>
+      <p class="lede">The <strong>Bihać Hip Hop</strong> scene began developing in the <strong>late 1970s</strong> and continued through the <strong>1980s</strong>, influenced by <strong>American Hip Hop</strong> and the local youth culture. Bihać emerged as one of the <strong>earliest and most active Hip Hop centers</strong> in Bosnia and Herzegovina, particularly in the <strong>Nova Četvrt (New Quart)</strong> and <strong>Harmani/Centre</strong> neighborhoods.</p>
+
+      <!-- Category Filters -->
+      <div class="chips" id="filters">
+        <div class="chip" data-filter="all" data-active="true">Show All</div>
+        <div class="chip" data-filter="foundations">Foundations</div>
+        <div class="chip" data-filter="radio">Radio</div>
+        <div class="chip" data-filter="cinema">Cinema</div>
+        <div class="chip" data-filter="crew">Crews</div>
+        <div class="chip" data-filter="venue">Venues</div>
+        <div class="chip" data-filter="event">Events</div>
+        <div class="chip" data-filter="figure">Key Figures</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap grid">
+    <aside>
+      <h3>On this page</h3>
+      <ul class="toc">
+        <li><a href="#foundations">Late 1970s – Early 1980s: Foundations</a></li>
+        <li><a href="#golden">1984–1990: Golden Age</a></li>
+        <li><a href="#figures">Key Figures</a></li>
+        <li><a href="#crews">1985–1986: Electroshock → Screw Boys</a></li>
+        <li><a href="#venues">1987–1990: Scene Expansion & Venues</a></li>
+        <li><a href="#events">1989: First Major Event</a></li>
+        <li><a href="#screw-boys">Screw Boys — Music & Breakup</a></li>
+      </ul>
+      <p style="margin-top:12px; font-size:13px; color:var(--muted)">Static site • Ready for GitHub Pages</p>
+    </aside>
+
+    <div>
+      <!-- Foundations -->
+      <section id="foundations">
+        <h2>Late 1970s – Early 1980s: Foundations</h2>
+
+        <article class="card filter foundations" data-category="foundations">
+          <span class="tag t-found">Foundations</span>
+          <h3>Late 1970s — Early listening</h3>
+          <p><strong>Beytz D</strong> begins listening to <em>Break Beat</em> and <em>Funk</em> from labels like <strong>Sugar Hill Records</strong> and <strong>Enjoy Records</strong>—before the term “Hip Hop” was widely coined.</p>
+        </article>
+
+        <article class="card filter foundations" data-category="foundations">
+          <span class="tag t-found">Foundations</span>
+          <h3>Early 1980s — First B‑Boys & crews</h3>
+          <p><strong>Jasko Pecenković (Pečeni)</strong> becomes the first B‑Boy in <strong>Nova Četvrt</strong>. Beytz D joins him to form <strong>Brejkeri sa Nove Četvrti</strong> (New Quart Breakers).</p>
+          <ul>
+            <li><strong>1982–1990:</strong> Performances at city schools (<em>Avnoj, USAOJ, Technical High School</em>) and weekend discos (<em>Borići dorm in New Quart</em>, <em>Brklja</em>, <em>Žegar</em>, <em>Sokolac</em>).</li>
+            <li><strong>Rivals:</strong> Harmani B‑Boys (Harmani Breakers) from Harmani/Centre local communities.</li>
+            <li><strong>Notable B‑Boys:</strong> Brki, Pico Copy, Hary, Jakanni (RIP), Dejo, Grba, MCA, Mera MC, MC Burzoti, Pečeni, Dicka, Dule, Bestak, Dino, Drugi Dino, Boban, Pipi, and others.</li>
+            <li><strong>Where music was bought:</strong> Department store <em>Beograd</em>; <em>RIZ</em> record & cassette store.</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- Golden Age -->
+      <section id="golden">
+        <h2>1984–1990: Golden Age — Broadcast, Cinema & Rise</h2>
+
+        <article class="card filter radio" data-category="radio">
+          <span class="tag t-radio">Radio</span>
+          <h3>1984 — Tapes & radio shows</h3>
+          <p><strong>Beytz D</strong> discovers <strong>Dona Muzički Vlak</strong> (Dona Music Train, known locally as <em>Rap Attack</em>) on <em>Radio Velika Gorica</em> hosted by <strong>Slavin Balen</strong>, recording and distributing tapes across Bihać.</p>
+        </article>
+
+        <article class="card filter radio" data-category="radio">
+          <span class="tag t-radio">Radio</span>
+          <h3>1986 — Electrofunk Premiere → Rap Attack</h3>
+          <p>Beytz D finds <strong>Electrofunk Premiere</strong> on <em>Radio 101 (Croatia)</em>, encouraging Monday-night listening for fresh Hip Hop; a year later the show is branded <em>Rap Attack</em>.</p>
+          <p><strong>Also influential:</strong> <em>Po vašem izboru</em> (Radio Zagreb 1) and <em>Rock Express</em> (Radio Zagreb 2, hosted by <strong>Ante Batinović</strong>).</p>
+        </article>
+
+        <article class="card filter cinema" data-category="cinema">
+          <span class="tag t-cinema">Cinema</span>
+          <h3>Mid–late 1980s — Hip Hop films in Bihać cinemas</h3>
+          <p>Screenings of <em>Wild Style</em>, <em>Breakin'</em>, <em>Breakin' 2: Electric Boogaloo</em>, <em>Beat Street</em>, and <em>Krush Groove</em> shape B‑Boying, DJ techniques, Hip Hop fashion, and aerosol/graffiti art in the city.</p>
+        </article>
+
+        <article class="card filter radio" data-category="radio">
+          <span class="tag t-radio">Radio</span>
+          <h3>Local broadcast hub — Radio Club Bihać</h3>
+          <p>From 1983 onward, <strong>DJ Vuki</strong> and <strong>DJ Ido (MC Fresh Mix)</strong> use the local <strong>Bihać Radio Club</strong> to distribute and broadcast Hip Hop in the city.</p>
+        </article>
+      </section>
+
+      <!-- Key Figures -->
+      <section id="figures">
+        <h2>Key Figures</h2>
+
+        <article class="card filter figure" data-category="figure">
+          <span class="tag t-figure">Figure</span>
+          <h3>DJ Ido (MC Fresh Mix)</h3>
+          <p>Early Hip Hop pioneer who contributed to B‑Boying, DJing, MCing, and graffiti in Bihać; worked with DJ Vuki, Beytz D, “Mali” Rade, Deyan, Meshan, and Maska. Chronicled the scene and bridged <em>Electroshock Crew → Screw Boys</em> to younger generations.</p>
+          <blockquote style="margin:8px 0; color:var(--muted)">“Regardless [of the] war in Bosnia the true HIP HOP Spirit has survived in Bihać. The young, true HIP HOP warriors have picked up it where the Screw Boys had to stop.”</blockquote>
+        </article>
+
+        <article class="card filter figure" data-category="figure">
+          <span class="tag t-figure">Figure</span>
+          <h3>DJ Vuki — Pioneer</h3>
+          <p>A pioneering Hip Hop DJ and one of the first aerosol/graffiti artists from Bihać; played a key role in the formative 1980s era.</p>
+          <ul>
+            <li>Co‑founded <strong>Electroshock Crew</strong> with MC Fresh Mix, Mister B, and MCA; after <strong>Beytz D</strong> joined, the group became <strong>Screw Boys</strong>.</li>
+            <li>Quote (DJ Ido): “The first name of the crew was ELECTROSHOCK (DJ Vuki, MC Fresh Mix, Mister B and MCA). When the living legend Beytz D joined the crew, the crew changed name to SCREW BOYS.”</li>
+            <li>Main DJ at the first large‑scale Hip Hop event in Bihać, <strong>Club Azra (Park Hotel), 1989</strong>.</li>
+          </ul>
+          <h4 style="margin-top:10px">Legacy</h4>
+          <p>Remembered as one of the key architects of Bihać’s earliest Hip Hop movement, paving the way for later generations of DJs, MCs, and aerosol/graffiti artists.</p>
+        </article>
+      </section>
+
+      <!-- Crews -->
+      <section id="crews">
+        <h2>1985–1986: Electroshock Crew → Screw Boys</h2>
+
+        <article class="card filter crew" data-category="crew">
+          <span class="tag t-crew">Crew</span>
+          <h3>Electroshock Crew (1985–1986)</h3>
+          <p>Members: <strong>DJ Vuki</strong>, <strong>DJ Ido (MC Fresh Mix)</strong>, <strong>Mister B</strong>, <strong>MCA</strong>. After <strong>Beytz D</strong> joined, the crew was renamed <strong>Screw Boys</strong>.</p>
+        </article>
+      </section>
+
+      <!-- Venues & Expansion -->
+      <section id="venues">
+        <h2>1987–1990: Scene Expansion & Venues</h2>
+
+        <article class="card filter venue" data-category="venue">
+          <span class="tag t-venue">Venue</span>
+          <h3>“Rupa” (The Hole)</h3>
+          <p>The key underground club located in the <strong>basement of the Bihać municipal building</strong>, active from <strong>1987–1990</strong>. Hosted battles, DJ/MC performances, graffiti sessions, and fashion shows.</p>
+        </article>
+      </section>
+
+      <!-- Events -->
+      <section id="events">
+        <h2>1989: First Major Hip Hop Event</h2>
+
+        <article class="card filter event" data-category="event">
+          <span class="tag t-event">Event</span>
+          <h3>Club Azra, Park Hotel — 1989</h3>
+          <p>Organized by <strong>Screw Boys</strong>; hundreds attended. Full organization included flyers, DJ performances, and curated music.</p>
+        </article>
+      </section>
+
+      <!-- Screw Boys music & breakup -->
+      <section id="screw-boys">
+        <h2>Screw Boys — Music & Breakup</h2>
+        <article class="card filter crew" data-category="crew">
+          <span class="tag t-crew">Crew</span>
+          <p>The group produced several tracks (unreleased). Their final internal hit, <strong>“Night Killer”</strong>—inspired by <em>Colors</em>—featured key contributions from <strong>Dejan Pavlović</strong> and <strong>Polar ICE</strong>. The crew disbanded during the <strong>Yugoslav Wars (1992–1995)</strong>.</p>
+        </article>
+      </section>
+
+      <footer>
+        <p>© Bihać Hip Hop History. Static site generated for archival and educational use. • <a href="https://bejcd69-hiphop.github.io/bihac-hiphop-timeline/" target="_blank" rel="noopener">GitHub Pages version</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Simple filter controls (static client-side)
+    const chips = document.querySelectorAll('.chip');
+    const cards = document.querySelectorAll('.card.filter');
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      chips.forEach(c => c.dataset.active = 'false');
+      chip.dataset.active = 'true';
+      const f = chip.dataset.filter;
+      cards.forEach(card => {
+        if (f === 'all' || card.dataset.category === f) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }));
+  </script>
+</body>
+</html>
