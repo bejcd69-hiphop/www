@@ -35,12 +35,19 @@
     .comment strong {
       color: #ffcc00;  /* Optional: highlight names inside comment */
     }
-    .responsive-img {
-      display: block;       /* removes small gaps under inline images */
-      max-width: 100%;      /* makes the image scale down to container width */
-      height: auto;         /* keeps the correct aspect ratio */
-      border-radius: 8px;   /* optional styling */
-    }
+
+
+    .img-container {
+  text-align: center;   /* centers the image horizontally */
+}
+
+.responsive-img {
+  max-width: 100%;      /* never larger than the screen */
+  height: auto;         /* keeps aspect ratio */
+  display: inline-block; /* allows centering with text-align */
+}
+
+   
   </style>
 </head>
 <body>
@@ -117,10 +124,12 @@
     </p>
     <p><strong>DJ Vuki:</strong> A pioneering Hip Hop DJ and one of the first Aerosol artists from Bihać. He co-founded Electroshock Crew with MC Fresh Mix, Mister B and MCA, later evolving into Screw Boys after Beytz D joined. Remembered as the main DJ at the historic 1989 Club Azra event, his contributions paved the way for later generations of DJs, MCs and graffiti artists in the region.</p>
   </section>
-  <figure>
+  <!--- <figure> --->
+    <div class="img-container">
       <img src="Radio-Club-Bihac-1985.png" alt="Radio Club Bihać in 1983" width="500">
-      <figcaption>DJ Vuki and MC Fresh Mix at Radio Club Bihać, 1983</figcaption>
-  </figure>
+    </div>div></div>
+  <!---    <figcaption>DJ Vuki and MC Fresh Mix at Radio Club Bihać, 1983</figcaption> --->
+  <!--- </figure> --->
 
   <footer>
     <p>Bihać Hip Hop Timeline &copy; 2025</p>
